@@ -1,0 +1,9 @@
+[Unit]
+Description = turn on and off the light on the aqua tank
+
+[Service]
+ExecStart = /home/hfukuda/git/aqua_light/main.py
+Type = simple
+
+[Install]
+WantedBy = multi-user.target

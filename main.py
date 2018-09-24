@@ -10,14 +10,14 @@ LIGHT_PIN = 11
 
 def on_light():
     GPIO.setmode(GPIO.BOARD)
-    GPIO.setup(pin, GPIO.OUT)
-    GPIO.output(pin, True)
+    GPIO.setup(LIGHT_PIN, GPIO.OUT)
+    GPIO.output(LIGHT_PIN, True)
 
 
 def off_light():
     GPIO.setmode(GPIO.BOARD)
-    GPIO.setup(pin, GPIO.OUT)
-    GPIO.output(pin, False)
+    GPIO.setup(LIGHT_PIN, GPIO.OUT)
+    GPIO.output(LIGHT_PIN, False)
 
 
 def main():
